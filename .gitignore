@@ -1,4 +1,6 @@
 /bin
 /build
-/.vscode
+c_cpp_properties.json
+extensions.json
+settings.json
 compile_commands.json
