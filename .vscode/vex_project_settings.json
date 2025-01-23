@@ -1,18 +1,19 @@
 {
-	"project": {
-		"name": "4_Wheel_With_Brakes",
-		"slot": 1,
-		"description": "Empty V5 C++ Project",
-		"platform": "V5",
-		"creationDate": "Thu, 19 Sep 2024 23:36:03 GMT",
-		"language": "cpp",
-		"sdkVersion": "V5_20240223_11_00_00",
-		"cpp": {
-			"includePath": []
-		}
-	},
 	"extension": {
 		"version": "0.6.0",
-		"json": 1
+		"json": 2
+	},
+	"project": {
+		"name": "Swaggins",
+		"description": "Vex U UCA 24 by 24 Bot",
+		"creationDate": "10/31/2024, 1:09:43 PM",
+		"platform": "V5",
+		"language": "cpp",
+		"slot": 1,
+		"sdkVersion": "V5_20240223_11_00_00",
+		"cpp": {
+			"includePath": [],
+			"printf_float": true
+		}
 	}
 }
