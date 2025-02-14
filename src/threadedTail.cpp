@@ -29,10 +29,10 @@ void threadedTail() {
         
         //Set Point
             if (hitched == false) {
-                setP = 1;
+                setP = 151;
 
             } else if (hitched == true) {
-                setP = 9;
+                setP = 166;
 
             }
 
