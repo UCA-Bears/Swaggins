@@ -53,7 +53,7 @@ void threadedTail() {
         //Speed and Turning
             Controller1.Screen.print(hitched ? "Hitched = True   " : "Hitched = False   ");
             Controller1.Screen.setCursor(2,2);
-            Tail_Motor.setVelocity(100, pct);
+            Tail_Motor.setVelocity(Tail_Speed, pct);
 
             turn = (turn * -1) /360;
             Tail_Motor.spinFor(turn, rev, false);
