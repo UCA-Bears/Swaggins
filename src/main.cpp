@@ -23,13 +23,13 @@ competition Competition;
   motor FL_Motor = motor(PORT9, true);
   motor BR_Motor = motor(PORT10);
   motor BL_Motor = motor(PORT1, true);
-  motor Tail_Motor = motor(PORT20);
+  motor Tail_Motor = motor(PORT20, ratio36_1,true );
   motor Cv_Motor = motor(PORT3);
 //Sensors
   rotation Tail_Sensor = rotation(PORT19);
 // Variables
   double Cv_Speed = 100;
-
+  double Tail_Speed = 100;
 
 void pre_auton(void) {
 

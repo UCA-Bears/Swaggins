@@ -19,6 +19,7 @@
         extern double AxisFwdDriveOut;
         extern double AxisTurnDriveOut;
         extern double Cv_Speed; 
+        extern double Tail_Speed;
 
 
 void threadedDrive();
