@@ -1,6 +1,5 @@
 #include "vex.h"
-#include "functions.h"
-#include <cmath>
+#include "main.h"
 
 using namespace vex;
 

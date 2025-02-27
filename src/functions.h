@@ -1,27 +1,7 @@
 #ifndef MY_FUNCTIONS_H
 #define MY_FUNCTIONS_H
 
-    #include "vex.h"
-    using namespace vex;
-
-    //Controller
-        extern controller Controller1;
-    //Motors
-        extern motor FR_Motor;
-        extern motor FL_Motor;
-        extern motor BR_Motor;
-        extern motor BL_Motor;
-        extern motor Tail_Motor;
-        extern motor Cv_Motor;
-    //Sensors 
-        extern rotation Tail_Sensor;
-    //Variables
-        extern double AxisFwdDriveOut;
-        extern double AxisTurnDriveOut;
-        extern double Cv_Speed; 
-        extern double Tail_Speed;
-
-
+    #include "main.h"
 void threadedDrive();
 
 void threadedBrakes();

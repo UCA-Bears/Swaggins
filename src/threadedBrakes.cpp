@@ -1,6 +1,5 @@
 #include "vex.h"
-#include "functions.h"
-#include <string>
+#include "main.h"
 
 using namespace vex;
 
