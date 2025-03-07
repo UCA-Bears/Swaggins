@@ -16,6 +16,8 @@
         extern motor FL_Motor;
         extern motor BR_Motor;
         extern motor BL_Motor;
+        extern motor CL_Motor;
+        extern motor CR_Motor;
         extern motor Tail_Motor;
         extern motor Cv_Motor;
     //Sensors 
