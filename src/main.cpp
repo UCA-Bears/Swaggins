@@ -23,8 +23,8 @@ competition Competition;
   motor FL_Motor = motor(PORT9, true);
   motor BR_Motor = motor(PORT10);
   motor BL_Motor = motor(PORT1, true);
-  motor CL_Motor = motor(PORT21);
-  motor CR_Motor = motor(PORT21, true);
+  motor CL_Motor = motor(PORT8);
+  motor CR_Motor = motor(PORT18, true);
   motor Tail_Motor = motor(PORT20, true);
   motor Cv_Motor = motor(PORT3);
 //Sensors
