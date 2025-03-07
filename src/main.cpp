@@ -23,6 +23,8 @@ competition Competition;
   motor FL_Motor = motor(PORT9, true);
   motor BR_Motor = motor(PORT10);
   motor BL_Motor = motor(PORT1, true);
+  motor CL_Motor = motor(PORT21);
+  motor CR_Motor = motor(PORT21, true);
   motor Tail_Motor = motor(PORT20, true);
   motor Cv_Motor = motor(PORT3);
 //Sensors
@@ -52,6 +54,8 @@ void usercontrol(void) {
   thread threadFL_Motor = thread(threadedFL_Motor);
   thread threadBR_Motor = thread(threadedBR_Motor);
   thread threadBL_Motor = thread(threadedBL_Motor);
+  thread threadCR_Motor = thread(threadedCR_Motor);
+  thread threadCL_Motor = thread(threadedCL_Motor);
   thread threadTail = thread(threadedTail);
   thread threadCv = thread(threadedCv); 
 

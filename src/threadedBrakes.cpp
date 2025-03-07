@@ -12,6 +12,8 @@ void threadedBrakes() {
         FL_Motor.setBrake(brakeMode);
         BR_Motor.setBrake(brakeMode);
         BL_Motor.setBrake(brakeMode);
+        CR_Motor.setBrake(brakeMode);
+        CL_Motor.setBrake(brakeMode);
     
     while(1) {
         if (AxisFwdDriveOut == 0 && AxisTurnDriveOut == 0) {
@@ -19,6 +21,8 @@ void threadedBrakes() {
             FL_Motor.stop();
             BR_Motor.stop();
             BL_Motor.stop();
+            CR_Motor.stop();
+            CL_Motor.stop();
         } 
     wait(5, msec);
     }
