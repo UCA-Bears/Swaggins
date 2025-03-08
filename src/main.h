@@ -12,14 +12,19 @@
     //Controller
         extern controller Controller1;
     //Motors
-        extern motor FR_Motor;
-        extern motor FL_Motor;
-        extern motor BR_Motor;
-        extern motor BL_Motor;
-        extern motor CL_Motor;
-        extern motor CR_Motor;
-        extern motor Tail_Motor;
-        extern motor Cv_Motor;
+        extern motor FR_Motor; //Front Right Motor
+        extern motor FL_Motor; //Front Left Motor
+        extern motor BR_Motor; //Back Right Motor
+        extern motor BL_Motor; //Back Left Motor
+        extern motor CL_Motor; //Center Left Motor
+        extern motor CR_Motor; //Center Right Motor
+        extern motor Tail_Motor; //Tail Hitch Motor
+        extern motor Cv_Motor; //Conveyer Motor
+        extern motor LR_Motor; //Left Roller
+        extern motor RR_Motor; //Right Roller
+
+    //Motor Groups
+        extern motor_group R_Motors;
     //Sensors 
         extern rotation Tail_Sensor;
     //Variables
@@ -27,5 +32,6 @@
         extern double AxisTurnDriveOut;
         extern double Cv_Speed; 
         extern double Tail_Speed;
+        extern double R_Speed;
 
 #endif

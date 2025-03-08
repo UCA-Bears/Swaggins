@@ -15,8 +15,15 @@ void threadedDrive() {
             double FwdAxis = Controller1.Axis3.position();
             double TurnAxis = Controller1.Axis1.position();
         //Temp Direct Drive
+
+        if (TurnAxis >  80 || TurnAxis < -80) {
             AxisFwdDriveOut = FwdAxis;
-            AxisTurnDriveOut = TurnAxis;
+            AxisTurnDriveOut = 2*TurnAxis;
+        } else {
+            AxisFwdDriveOut = FwdAxis;
+            AxisTurnDriveOut = (1.25)*TurnAxis;
+        }
+            
 
 
         wait(5,msec);

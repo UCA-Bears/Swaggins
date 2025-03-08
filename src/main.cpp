@@ -27,12 +27,16 @@ competition Competition;
   motor CR_Motor = motor(PORT18, true);
   motor Tail_Motor = motor(PORT20, true);
   motor Cv_Motor = motor(PORT3);
+  motor RR_Motor = motor(PORT15);
+  motor LR_Motor = motor(PORT16, true);
+//Motor Groups
+  motor_group R_Motors = motor_group(RR_Motor, LR_Motor);
 //Sensors
   rotation Tail_Sensor = rotation(PORT19);
 // Variables
   double Cv_Speed = 100;
   double Tail_Speed = 100;
-
+  double R_Speed = 100;
 
 void pre_auton(void) {
 
@@ -58,6 +62,7 @@ void usercontrol(void) {
   thread threadCL_Motor = thread(threadedCL_Motor);
   thread threadTail = thread(threadedTail);
   thread threadCv = thread(threadedCv); 
+  thread threadR = thread(threadedR);
 
   while (1) {
     
