@@ -14,6 +14,18 @@ void drive(int speed, float time) {
 
 }
 
+void drive(int speed, float distance) {
+    float time;
+    const int wheelSize = 4; //Wheel Size in inches
+    const int wheelDiam = wheelSize * 3.14159; 
+
+
+
+
+
+
+}
+
 void turn(int speed, float time) {
     if (time > 0 ) { //Turn Right
         BL_Motor.spin(fwd, speed, pct);
