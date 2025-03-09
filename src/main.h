@@ -24,14 +24,20 @@
         extern motor RR_Motor; //Right Roller
 
     //Motor Groups
-        extern motor_group R_Motors;
+        extern motor_group R_Motors; //Roller Motors
+        extern motor_group RD_Motors; //Right Side Drive Motors
+        extern motor_group LD_Motors; //Left Side Drive Motors
     //Sensors 
         extern rotation Tail_Sensor;
     //Variables
-        extern double AxisFwdDriveOut;
-        extern double AxisTurnDriveOut;
-        extern double Cv_Speed; 
-        extern double Tail_Speed;
-        extern double R_Speed;
+        extern double AxisFwdDriveOut; //To Send Forward Inputs too drive wheel Threads
+        extern double AxisTurnDriveOut; //TO send stering inputs to drive wheel threads
+
+        //All Speeds are in percent unless stated otherwise
+        extern double Cv_Speed;  //Conveyer Speed
+        extern double Tail_Speed; //Tail Speed 
+        extern double R_Speed; //Roller Speed 
+
+        
 
 #endif

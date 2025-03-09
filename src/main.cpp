@@ -30,6 +30,8 @@ competition Competition;
   motor RR_Motor = motor(PORT15);
   motor LR_Motor = motor(PORT16, true);
 //Motor Groups
+  motor_group LD_Motors = motor_group(CL_Motor, FL_Motor, BL_Motor);
+  motor_group RD_Motors = motor_group(CR_Motor, FR_Motor, BR_Motor);
   motor_group R_Motors = motor_group(RR_Motor, LR_Motor);
 //Sensors
   rotation Tail_Sensor = rotation(PORT19);
@@ -46,7 +48,9 @@ void pre_auton(void) {
 
 
 void autonomous(void) {
-  
+  //Distance values are in INCHES
+
+
 }
 
 
