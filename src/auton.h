@@ -6,7 +6,7 @@
         //All Measurements are in inches
         //SET THESE BASED ON BOT SPECIFICS
         static const int WHEELSIZE = 4; //Wheel Size in inches
-        static const int BOTLENGTH = 24; //Track Width assumes a symetrical wheel placement
+        static const float BOTLENGTH = 14 + (10.0/16.0); //Track Width assumes a symetrical wheel placement
         static const float WHEELSPEED = 250;
         //SET THESE ABOVE CORRECTLY
 
