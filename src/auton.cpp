@@ -48,7 +48,7 @@ void turn(int speed, vex::rotationUnits degr ) {
     float rotationDistance = PI * (BOTCIRCUM / 2.0f) * (static_cast<float>(degr) / 360.0f);
     
     time = rotationDistance / distPerSec; 
-
+    time = time * 1000; //Convert to Msecs
     //Negative time is left turn. Positive time is right turn 
 
     turn(speed, time);

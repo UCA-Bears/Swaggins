@@ -50,7 +50,7 @@ void pre_auton(void) {
 void autonomous(void) {
   //Distance values are in INCHES
     turn(100, vex::rotationUnits(360));
-    wait(10, sec);
+    wait(5, sec);
     drive(100, vex::distanceUnits(24));
 
 }
