@@ -1,10 +1,16 @@
 #include "main.h"
 
 void drive(int speed, float time) {
+    if (time > 0 ) { //Drive Forward
+        RD_Motors.spin(fwd, speed, pct);
+        LD_Motors.spin(fwd, speed, pct);
+        wait(time, msec);
 
-    RD_Motors.spin(fwd, speed, pct);
-    LD_Motors.spin(fwd, speed, pct);
-    wait(time, msec);
+    } else if ( time < 0) { //Drive Forward
+        LD_Motors.spin(reverse, speed, pct);
+        RD_Motors.spin(reverse, speed, pct);
+        wait(time * -1, msec);
+    }
     RD_Motors.stop(hold);
     LD_Motors.stop(hold);
 }

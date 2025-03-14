@@ -49,15 +49,16 @@ void pre_auton(void) {
 
 void autonomous(void) {
   //Distance values are in INCHES
-  //Negative Speed is Backwards
+  //Turn Values are in degrees
+  //Negative Distance is Backwards, Positive is Forwards
   //Negative degrees is left, Positive is right
 
-  drive(50, vex::distanceUnits(60));
+  drive(50, vex::distanceUnits(40));
   turn(50, vex::rotationUnits(-50));
-  drive(-50, vex::distanceUnits(36));
-  turn(50, vex::rotationUnits(30));
-  drive(-50, vex::distanceUnits(60));
-  drive(50, vex::distanceUnits(12));
+  drive(50, vex::distanceUnits(-36));
+  turn(50, vex::rotationUnits(60));
+  drive(50, vex::distanceUnits(-30));
+  drive(50, vex::distanceUnits(20));
 
 
 }
