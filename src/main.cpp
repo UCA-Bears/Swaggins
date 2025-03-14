@@ -22,7 +22,7 @@ competition Competition;
   motor FR_Motor = motor(PORT2);
   motor FL_Motor = motor(PORT9, true);
   motor BR_Motor = motor(PORT10);
-  motor BL_Motor = motor(PORT1, true);
+  motor BL_Motor = motor(PORT1, true); 
   motor CL_Motor = motor(PORT8);
   motor CR_Motor = motor(PORT18, true);
   motor Tail_Motor = motor(PORT20, true);
@@ -49,9 +49,16 @@ void pre_auton(void) {
 
 void autonomous(void) {
   //Distance values are in INCHES
-    turn(100, vex::rotationUnits(360));
-    wait(5, sec);
-    drive(100, vex::distanceUnits(24));
+  //Negative Speed is Backwards
+  //Negative degrees is left, Positive is right
+
+  drive(50, vex::distanceUnits(60));
+  turn(50, vex::rotationUnits(-50));
+  drive(-50, vex::distanceUnits(36));
+  turn(50, vex::rotationUnits(30));
+  drive(-50, vex::distanceUnits(60));
+  drive(50, vex::distanceUnits(12));
+
 
 }
 
